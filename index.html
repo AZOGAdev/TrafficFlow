@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Букмекерская компания Винлайн (Winline)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      backdrop-filter: blur(5px);
+      color: #222;
+    }
+
+    /* Liquid Glass background container */
+    .glass {
+      background: rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .title img {
+      width: 60px;
+      height: auto;
+    }
+
+    h1, h2 {
+      margin: 0 0 20px;
+      color: #1c1c1c;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 30px 0;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .feature-card::before {
+      content: "✔️ ";
+      color: #2ecc71;
+    }
+
+    img {
+      border-radius: 12px;
+      max-width: 100%;
+      height: auto;
+      margin: 30px 0;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .img-left {
+      float: left;
+      width: 40%;
+      margin-right: 20px;
+    }
+
+    .img-right {
+      float: right;
+      width: 40%;
+      margin-left: 20px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Toggle table */
+    .toggle-container {
+      margin: 40px 0;
+    }
+
+    #toggle-table {
+      display: none;
+    }
+
+    .toggle-label {
+      display: block;
+      background: #ff5c00;
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .table-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+
+    #toggle-table:checked + .toggle-label + .table-content {
+      max-height: 1000px;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(6px);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f7f7f7;
+    }
+
+    @media (max-width: 768px) {
+      .img-left, .img-right {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+      }
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass">
+
+    <div class="title">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Logo-winline.png" alt="Логотип Винлайн">
+      <h1>Букмекерская компания Винлайн (Winline)</h1>
+    </div>
+
+    <p>
+      Букмекерская компания «Винлайн» – один из самых крупных и прогрессивных беттинговых продуктов в России. 
+      Бренд «Винлайн» принадлежит «Управляющей компании НКС», которая имеет действующую лицензию Федеральной налоговой службы России. 
+      Она входит в СРО «Ассоциация букмекерских контор» и работает с ЕЦУПИС. Основное направление – онлайн-ставки.
+    </p>
+
+    <h2>Плюсы и минусы БК «Винлайн»</h2>
+    <div class="features">
+      <div class="feature-card">Удобные мобильные приложения</div>
+      <div class="feature-card">Бездепозитный фрибет 3 000 ₽</div>
+      <div class="feature-card">Высокие коэффициенты</div>
+      <div class="feature-card">Игра на 50 миллионов</div>
+      <div class="feature-card">Мало ППС</div>
+    </div>
+
+    <div class="clearfix">
+      <img src="https://avatars.mds.yandex.net/i?id=c390a8e7bcea53f83a9534c2c4795f62_l-5272510-images-thumbs&n=13" 
+           alt="Мобильное приложение Winline" class="img-left">
+      <p>
+        Приложение Winline для iOS и Android предлагает удобный интерфейс, быстрые ставки и доступ к трансляциям. 
+        Интерфейс адаптирован под все типы устройств и отличается высокой скоростью работы.
+      </p>
+    </div>
+
+    <h2>Акции и бонусы БК Winline</h2>
+    <div class="clearfix">
+      <img src="https://avatars.mds.yandex.net/i?id=3e1bd2ee716f600d262a2c28605973c800900408-5887964-images-thumbs&n=13" 
+           alt="Бонусы в приложении" class="img-right">
+      <p>
+        Winline предлагает новым пользователям фрибет до 3000 ₽ без депозита. Также действует бонусная программа с подарками и вознаграждениями за активность.
+        Постоянные акции делают игру более выгодной и интересной.
+      </p>
+    </div>
+
+    <div class="toggle-container">
+      <input type="checkbox" id="toggle-table">
+      <label class="toggle-label" for="toggle-table">📋 Информация о компании</label>
+      <div class="table-content">
+        <table>
+          <tr>
+            <th>⚽ Официальный сайт</th>
+            <td><a href="https://winline.ru" target="_blank">winline.ru</a></td>
+          </tr>
+          <tr>
+            <th>✨ Бонус за регистрацию</th>
+            <td>3000 ₽</td>
+          </tr>
+          <tr>
+            <th>✨ Промокод</th>
+            <td>Не требуется</td>
+          </tr>
+          <tr>
+            <th>⚽ Минимальный депозит</th>
+            <td>100 ₽</td>
+          </tr>
+          <tr>
+            <th>⚽ Минимальная ставка</th>
+            <td>50 ₽</td>
+          </tr>
+          <tr>
+            <th>⚽ Мобильное приложение</th>
+            <td>iOS, Android</td>
+          </tr>
+          <tr>
+            <th>⚽ Трансляции</th>
+            <td>Футбол, Хоккей, Баскетбол, Киберспорт</td>
+          </tr>
+          <tr>
+            <th>⚽ Почта</th>
+            <td><a href="mailto:support@winline.ru">support@winline.ru</a></td>
+          </tr>
+          <tr>
+            <th>⚽ Телефон</th>
+            <td>8 (800) 333-60-47</td>
+          </tr>
+          <tr>
+            <th>⚽ Онлайн-чат</th>
+            <td>Да</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <img src="https://storage.myseldon.com/news-pict-fd/FDA65A335255A032227B23270C25BDB8" alt="Трансляции матчей в приложении Винлайн">
+
+  </div>
+</body>
+</html>
